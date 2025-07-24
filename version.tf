@@ -9,7 +9,8 @@ terraform {
     backend "s3" {
         bucket = "juan-terraform-backend"
         key    = "states/dev.tfstate"
-        region = "us-east-1"
+        region = "ap-southeast-2"
+
     }
     
     required_version = ">= 0.12"
