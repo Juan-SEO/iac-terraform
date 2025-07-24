@@ -1,8 +1,4 @@
-provider "aws" {
-  region = var.region
-}
-
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = var.bucket_name
-  force_destroy = true
+resource "aws_instance" "git_hub_actions_ec2" {
+  ami = var.ammi["apache"]
+  instance_type = "t2.micro"
 }
