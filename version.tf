@@ -7,7 +7,7 @@ terraform {
     }
 
     backend "s3" {
-        bucket = "juan-terraform-backend"
+        bucket = "juan-terraform-iac-demo"
         key    = "states/dev.tfstate"
         region = "us-east-1"
 
